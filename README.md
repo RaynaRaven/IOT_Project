@@ -2,7 +2,7 @@
 #### Student Name: Carol Marjara   Student ID: 20099905
 
 
-![alt text](https://github.com/RaynaRaven/IOT_Project/blob/main/image.jpg?raw=true)
+![alt text](https://github.com/RaynaRaven/IOT_Project/blob/main/reduceFoodWaste.png?raw=true)
 
 
 The food saver system is a product scanner and notification system that helps to reduce food waste by scanning food barcodes and expiry dates, storing this information in a database and reminding the user via email 48 hours prior to the expiry date that the particular item will expire soon. 
