@@ -60,7 +60,7 @@ for img in [img_source, gray, thresh, opening, canny]:
             if text and text.strip() != "":
                 img = cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
                 img = cv2.putText(img, text, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 1.2, (0, 255, 0), 3)
-                cv2.imwrite("img"+str(i)+".jpg", img)
+                cv2.imwrite("/images/test_results/img"+str(i)+".jpg", img)
                 #print(d)
                 #print(text)
                 for item in d['text']:
