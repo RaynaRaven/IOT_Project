@@ -73,9 +73,6 @@ def BarcodeReader(image):
                 sense.set_pixels(patternT)
                 time.sleep(2)
                 sense.clear(O)
-
-    # Saving the image for test purposes
-    cv2.imwrite("bc.jpg", img)
                  
     #Display the image on display :1
     #cv2.imshow("Image", img)
@@ -84,5 +81,5 @@ def BarcodeReader(image):
 
 if __name__ == "__main__":
   # Take the image from user
-    image="glensallaghTurkey.png" #"Blank.jpg" (for test purposes)
+    image="images/barcodes/glensallaghTurkey.png" #'images/Blank.jpg'(for test purposes)
     BarcodeReader(image)
