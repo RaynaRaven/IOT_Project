@@ -1,0 +1,11 @@
+{{> menu id="dashboard"}}
+
+{{#each foodList}}
+    <section class="ui segment">
+        <h2 class="ui header">
+            Your List
+        </h2>
+        <p> Items: </p>
+        <a href="/foodList/{{id}}"> View </a>
+</section>
+{{/each}}

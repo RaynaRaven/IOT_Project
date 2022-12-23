@@ -1,0 +1,36 @@
+<table class="ui table">
+    <thead>
+    <tr>
+        <th>Date Added</th>
+        <th>Product Name</th>
+        <th style = "text-align: center">Expiry Date</th>
+        <th style = "text-align: center">Days left</th>
+        <th style = "text-align: center"></th>
+        <th style = "text-align: center"></th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each foodList.items}}
+    <tr>
+        <td >
+            {{dateAdded}}
+        </td>
+        <td>
+            {{productName}}
+        </td>
+        <td style = "text-align: center">
+            {{expiryDate}}
+        </td>
+        <td style = "text-align: center">
+            {{daysLeft}}
+        </td>
+        <td style = "text-align: right">
+            <a href="" class="ui icon button" style="background-color: mediumpurple;"><i class="pencil alternate icon"></i></a>
+        </td>
+        <td>
+            <a href="" class="ui icon button" style="background-color: mediumpurple;"><i class="icon trash"></i></a>
+        </td>
+    </tr>
+    {{/each}}
+    </tbody>
+</table>

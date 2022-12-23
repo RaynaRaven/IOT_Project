@@ -1,0 +1,18 @@
+{{> menu}}
+
+<section class="ui center aligned middle aligned segment">
+    <h2 class="ui header">
+        Your List
+    </h2>
+    <p> dashboard widgets here? </p>
+    <!--{{> summary}} -->
+    <section class="ui segment" style="background-color: beige">
+        {{#if foodlist.items}}
+            {{>items}}
+            <!--{{> addreadings}} -->
+        {{else}}
+            <h4> You have no foods listed! Scan some or add manually!</h4>
+            <!--{{> addreadings}} -->
+        {{/if}}
+    </section>
+</section>

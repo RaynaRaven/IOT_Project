@@ -1,0 +1,19 @@
+
+<nav class="ui raised menu">
+    <header class="ui large header item"> <a href="/dashboard"> <i class="home icon"></i> </a></header>
+    <div class = "ui container" style="position: relative; width:100%; max-height:200px; overflow: hidden">
+        <div class ="ui container" style="position: absolute; bottom: 5%; left: 3%; color: white;text-shadow: 1px 1px 0px #000000;">
+            <h1 style="font-size: xx-large; color: black; opacity: 80%">  FoodSaver </h1>
+        </div>
+    </div>
+    <div class="right menu">
+        <a id="dashboard" class="item" href="/dashboard"> Dashboard  </a>
+        <a id="about" class="item" href="/about"> About </a>
+        <a id="profile" class="item" href="/profile"><i class="user icon"></i></a>
+        <a id="logout" class="item" href="/logout"> Logout </a>
+    </div>
+</nav>
+
+<script>
+    $("#{{id}}").addClass("active item");
+</script>

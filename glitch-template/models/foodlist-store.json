@@ -1,0 +1,24 @@
+{
+  "listCollection": [
+    {
+      "id" : "01",
+      "title": "FoodList",
+      "items": [
+        {
+          "id": "01",
+          "dateAdded": "2022-12-22",
+          "productName": "Hellman's Mayonnaise",
+          "expiryDate": "2022-12-25",
+          "daysLeft": 3
+        },
+        {
+          "id": "02",
+          "dateAdded": "2022-12-21",
+          "productName": "Fresh Turkey",
+          "expiryDate": "2022-12-25",
+          "daysLeft": 3
+        }
+      ]
+    }
+  ]
+}
