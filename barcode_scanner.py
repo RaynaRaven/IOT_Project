@@ -1,4 +1,3 @@
-# Importing library
 import cv2
 from pyzbar.pyzbar import decode
 from sense_hat import SenseHat
@@ -86,7 +85,7 @@ def BarcodeReader(image):
                 #print(response.status_code)
                 if response.status_code == 200:
                   data = response.json()
-                  #print(data)
+                  print(data)
 
                   # Extract the brands and product name from the data dictionary
                   brand = data['products'][0]['brands_tags'][0]
@@ -97,26 +96,31 @@ def BarcodeReader(image):
                   #print(product)
                   
                   #Get the current date and format it as a string
-                  now = datetime.now().strftime("%Y-%m-%d")
+                  #now = datetime.now().strftime("%Y-%m-%d")
 
-                  # Create a dictionary with the product name, date, and date added
+                  # Create dict with the product name, date, and date added
                   product_data = {
                   "product_name": product,
-                  "expiry_date": None,
-                  "date_added": now
+                  "expiry_date": None
                   }
 
-                  
+                  #green light to signal barcode detected successfully
+                  sense.set_pixels(patternT)
+                  time.sleep(2)
+                  sense.clear(O)
+
+                  #print(product_data)
+                  return product_data
+
+
                 #TODO
                 # else: email to user "Dear User, a barcode you recently added was not found on Open Food Facts Database. 
                 # Please login to your app to enter it manually or contributing item details to the Open Food Facts Database here: <hyperlink> "
 
-                #green light to signal barcode detected successfully
-                sense.set_pixels(patternT)
-                time.sleep(2)
-                sense.clear(O)
+                
 
 if __name__ == "__main__":
   # Take the image from user
-    image="images/barcodes/test2.jpg" #'images/Blank.jpg'(for test purposes)
-    BarcodeReader(image)
+  #image='images/Blank.jpg'# blank jpg for test purposes
+  image="images/barcodes/test2.jpg" 
+  BarcodeReader(image)
