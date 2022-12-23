@@ -6,6 +6,7 @@ from sense_hat import SenseHat
 import re
 import calendar
 from datetime import datetime
+import time
 
 sense = SenseHat()
 red = (255,0,0)
