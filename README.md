@@ -11,7 +11,7 @@ It works by scanning food barcodes and expiry dates and storing this information
 
 The scanned data is stored in a dictionary and sent to a Firebase real-time database, which serves as persistent storage for a web application created using Glitch, node.js and express framework. The user can log in to this app to view, update, and delete their list of scanned food items. If an item is about to expire, A red LED alert is displayed on the Sense HAT LED matrix until the user removes the expiring item from their list. The system also sends email reminders to the user 48 hours prior to the expiry date of a particular item, to remind them to use or freeze it before it goes bad.
 
-![alt text](https://github.com/RaynaRaven/IOT_Project/blob/main/project_grpahic/projectGraphic.png?raw=true)
+![alt text](https://github.com/RaynaRaven/IOT_Project/blob/main/project_graphic/projectGraphic.png?raw=true)
 
 
 ## Tools, Technologies and Equipment
